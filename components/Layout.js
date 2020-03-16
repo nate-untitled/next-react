@@ -1,6 +1,11 @@
+import Head from 'next/head'
+
 function Layout(props) {
     return (
       <div className="App App-header">
+      <Head>
+          <title>Untitled Guidelines</title>
+      </Head>
         {props.children}
         <style jsx global>{`
         .App {
@@ -46,6 +51,7 @@ function Layout(props) {
             text-decoration: none;
             margin: 0 20px;
             color: #000;
+            cursor: pointer;
         }
 
         a:hover {
